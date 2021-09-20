@@ -1,0 +1,102 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, Verdana, Geneva, Sans-serif; 
+}
+
+
+/* Wrap the entire banner image to the top of the page */
+#main-banner {
+	width: 100%;
+	margin-top: -15px;
+	height: 200px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color:#99f107;
+}
+
+/* turn the main navigation into a flex box */
+#main-nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	background-image: radial-gradient(farthest-corner at 100% 100%, #a5a7a2 5%, #282826 55%, black 100%);
+	margin-top: -3px; /* make navigation closer to the banner */
+}
+
+.main-div {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 0px 0px;
+}
+
+img {
+	width: 100%;
+	
+}
+
+#ul-left-panel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 0px 0px;
+}
+.main-list {
+	color: #73d572; 
+	text-shadow: -1px 1px 2px #4d7556;
+	font-size: 2rem;
+}
+
+@media screen and (min-width: 720px) {
+	
+	/* if screen is higher than 720px, banner height is increased slightly */
+	#main-banner {
+		
+		height: 250px;
+		
+	}
+	/* if screen is higher than 720px, main navigation aligns by row */
+	#main-nav {
+		
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	
+	ul {
+		padding: 0px 100px 0px 100px;
+		
+	}
+		
+	#main-div {
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	
+	#ul-left-panel {
+		flex-direction: column;
+	}
+	
+	#left-panel {
+		order: -1;
+	}
+	
+	footer {
+		height: 150px;
+	}
+}
