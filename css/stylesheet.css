@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: Arial, Verdana, Geneva, Sans-serif; 
+	font-family: Arial, Verdana, Geneva, Sans-serif;
 }
 
 
@@ -16,7 +16,7 @@ ul {
 }
 
 a {
-	
+
 	text-decoration: none;
 	color: inherit;
 }
@@ -45,7 +45,7 @@ a:hover {
 
 img {
 	width: 100%;
-	
+
 }
 
 #ul-left-panel {
@@ -56,47 +56,65 @@ img {
 	padding: 0px 0px;
 }
 .main-list {
-	color: #73d572; 
+	color: #73d572;
 	text-shadow: -1px 1px 2px #4d7556;
 	font-size: 2rem;
 }
 
 @media screen and (min-width: 720px) {
-	
+
 	/* if screen is higher than 720px, banner height is increased slightly */
 	#main-banner {
-		
+
 		height: 250px;
-		
+
 	}
 	/* if screen is higher than 720px, main navigation aligns by row */
 	#main-nav {
-		
+
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
-	
-	ul {
+
+ul {
 		padding: 0px 100px 0px 100px;
-		
+
 	}
-		
+
 	#main-div {
-		
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		padding: 0px 50px 0px 50px;
 	}
-	
-	#ul-left-panel {
-		flex-direction: column;
-	}
-	
+
 	#left-panel {
 		order: -1;
+		flex-basis: 800px;
 	}
-	
-	footer {
-		height: 150px;
+
+	#right-panel {
+		flex-basis: 900px;
 	}
+
+	#right-panel img {
+
+		height: 150%;
+	}
+
+	#ul-left-panel {
+		flex-direction: column;
+		flex: 2;
+		justify-content: space-around;
+	}
+
+	#middle-panel p, img {
+
+		max-width: 90%;
+
+	}
+
+}
+
+footer {
+	height: 150px;
 }
