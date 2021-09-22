@@ -1,0 +1,7 @@
+Hi, 
+
+My name is Joseph Patrick.  I am a nerd with skills in HTML, CSS, Javascript, PHP, Python, C#, C++ and Pascal... well I loved that language so I'm adding it on thee. 
+
+My first experience in coding was with Pascal, and I was good at it.  I can code the hell out of Pascal creating interactive graphical 3d object at the time where command line interfaces was the norm and graphical user interfaces is in its infancy.  I had a hungry passion for learning and creating new things with my codes.  Sadly Pascal went out of favor as a programming language... but man I had fun with that programming language.
+
+Lately I am delving into and focusing on mastering CSS and Javascript in creating unique web designs.  I am hoping to achieve unique designs with CSS only.  Now, don't get me wrong, this is for hobby only and not workplace based skills which is commonly used by web developers to feature their skills on their profile but. just like the curb cut effect, who knows how these skills will benefit me later on.
