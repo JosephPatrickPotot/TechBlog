@@ -8,3 +8,17 @@
   background-image: url('../img/Banner2.png');
   background-size: cover;
 }
+
+#ibm-img {
+	width: 100%;
+	margin: auto;
+}
+
+/* button {
+	display: none;
+}
+
+#img-modal:hover {
+	display: block;
+} */
+

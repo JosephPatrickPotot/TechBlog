@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="assets/favicon.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
   </head>
@@ -40,12 +40,12 @@
    <!-- Jumbotron -->
     
     <div class="jumbotron jumbotron-fluid bg-info text-white">
-      <div class="container text-sm-center pt-5">
+      <div class="container text-center pt-5">
       <h2 class="display-4">Geeky Buys</h2>
 	  <p class="lead">Tech Blog</p>
       
         <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">View My Profile</button>
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#profile">View My Profile</button>
         <a  class="btn btn-light btn-lg" href="#speaker">Shop</a>
        
       </div>
@@ -63,7 +63,7 @@
     <div id="about" class="row">
       <div class="col-lg col-xl-6 order-lg-2">
         <h3 class="mb-4">About Technology blog</h3>
-        <img class = "mb-4 img-fluid rounded d-none d-sm-block" src = "img/vr-space.jpg" alt="Portland">
+        <img class = "mb-4 img-fluid rounded" src = "img/vr-space.jpg" alt="Portland">
         <p>The beautiful future of Virtual Reality is closer than you think</p>
         <p>Explore the future of Technology and learn what is the latest trend in the industry with the latest news and information from this blog</p>
       </div>
@@ -76,13 +76,13 @@
       <div class="col-lg order-lg-3">
         <h3 class="mb-4">Learn About</h3>
         <div class="list-group">
-  <a href="#" class="list-group-item list-group-item-action"><strong>Science</strong>: Latest About Science</a>
-  <a href="#" class="list-group-item list-group-item-action"><strong>Space</strong>: Everything Happening in Space</a>
-  <a href="#" class="list-group-item list-group-item-action"><strong>Physics</strong>: Where Science Becomes Magic</a>
-  <a href="#" class="list-group-item list-group-item-action"><strong>Computers</strong>: JavaScript, HTML, CSS and all Nerd Stuff</a>
-  <a href="#" class="list-group-item list-group-item-action"><strong>Technology</strong>: For Techies and Geeks</a>
-  <a href="#" class="list-group-item list-group-item-action"><strong>Mobile</strong>: Selfies and Stuff</a>
-</div>
+		  <a href="#" class="list-group-item list-group-item-action"><strong>Science</strong>: Latest About Science</a>
+		  <a href="#" class="list-group-item list-group-item-action"><strong>Space</strong>: Everything Happening in Space</a>
+		  <a href="#" class="list-group-item list-group-item-action"><strong>Physics</strong>: Where Science Becomes Magic</a>
+		  <a href="#" class="list-group-item list-group-item-action"><strong>Computers</strong>: JavaScript, HTML, CSS and all Nerd Stuff</a>
+		  <a href="#" class="list-group-item list-group-item-action"><strong>Technology</strong>: For Techies and Geeks</a>
+		  <a href="#" class="list-group-item list-group-item-action"><strong>Mobile</strong>: Selfies and Stuff</a>
+	  </div>
       </div> <!-- About -->
      
       
@@ -90,14 +90,16 @@
       
     </div>
 
-        <!-- Speakers-->
+        <!-- Contents-->
          
-      <div id="speakers" class="row">
+      <div id="contents" class="row">
         
                  
-          <div class="col-md-6 col-lg-4">
+          <div id="ibm" class="col-md-6 col-lg-4">
             <div class="card mb-3">
-              <img class="card-img-top" src="img/ibm.jpg" alt="IBM Logo">
+			 <a data-toggle="modal" href="#img-modal">
+			 <img class="card-img-top content-img" src="assets/ibm.jpg" alt="IBM Logo">
+			 </a>
               <div class="card-body">
                 <h4 class="card-title">The Failure of IBM</h4>
                 <p class="card-text">During the dawn of the computing age IBM was a technology giant once dubbed big blue. The scale of the company was massive at one stage consisting of sixty to seventy percent of all business computers in circulation but today it's a completely different story.  IBM was a major innovator. They invented the ATM...</p>
@@ -106,8 +108,10 @@
           </div>
         
           <div id="business" class="col-md-6 col-lg-4">
-             <div class="card mb-3">
-              <img class="card-img-top" src="img/business.jpg" alt="vivianne">
+             <div class="card mb-3"> 
+			 <a data-toggle="modal" href="#img-business">
+              <img class="card-img-top content-img" src="assets/business.jpg" alt="Business Photo">
+			  </a>
               <div class="card-body">
                 <h4 class="card-title">Business</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </p>
@@ -117,7 +121,7 @@
         
           <div id="tech" class="col-md-6 col-lg-4">
             <div class="card mb-3">
-              <img class="card-img-top" src="img/tech.jpeg" alt="Robbie">
+              <img class="card-img-top content-img" src="assets/tech.jpeg" alt="Tech Photo">
               <div class="card-body">
                 <h4 class="card-title">Technology</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
@@ -127,7 +131,7 @@
         
           <div id="industry" class="col-md-6 col-lg-4">
               <div class="card mb-3">
-              <img class="card-img-top" src="img/industry.jpg" alt="Ecma">
+              <img class="card-img-top content-img" src="assets/industry.jpg" alt="Industry Photo">
               <div class="card-body">
                 <h4 class="card-title">Industry</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
@@ -137,7 +141,7 @@
         
           <div class="col-md-6 col-lg-4">
              <div class="card mb-3">
-              <img class="card-img-top" src="img/technews.jpg" alt="Jay">
+              <img class="card-img-top content-img" src="assets/technews.jpg" alt="Tech News Photo">
               <div class="card-body">
                 <h4 class="card-title">Computers</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
@@ -147,7 +151,7 @@
         
          <div class="col-md-6 col-lg-4">
             <div class="card mb-3">
-              <img class="card-img-top" src="img/space.jpg" alt="Json">
+              <img class="card-img-top content-img" src="assets/space.jpg" alt="Spaceship in Space">
               <div class="card-body">
                 <h4 class="card-title">Space</h4>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
@@ -157,72 +161,14 @@
             
           </div>
         
-        
+        <!-- /Contents-->
+		
       </div>
    
-        <!--/Speakers-->
-      
-      
-        <!-- Schedule    
-          <h1 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h1>
-          
-           <ul class="list-group">
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Keynote: Internet of Things</h5>
-                <span class="badge badge-pill badge-info p-2">9:00am</span>
-              </div>
-              <p class="mb-1">NodeStradamus</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">React Basics</h5>
-                <span class="badge badge-pill badge-info p-2">10:00am</span>
-              </div>
-              <p class="mb-1">Vivianne McVue</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Hey, Mongo!</h5>
-                <span class="badge badge-pill badge-info p-2">11:00am</span>
-              </div>
-              <p class="mb-1">Jay Query</p>
-            </li>
-            <li class="list-group-item list-group-item-success">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Lunch</h5>
-                <span class="badge badge-pill badge-info p-2">12:00pm</span>
-              </div>
-              <p class="mb-1">Free pizza for everyone!</p>
-            </li>
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Introducing ES2015</h5>
-                <span class="badge badge-pill badge-info p-2">1:00pm</span>
-              </div>
-              <p class="mb-1">Ecma Scriptnstuff</p>
-            </li> 
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">Getting Started With Redux</h5>
-                <span class="badge badge-pill badge-info p-2">2:00pm</span>
-              </div>
-              <p class="mb-1">Robbie Redux</p>
-            </li> 
-            <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                <h5 class="mb-1">What's Babel?</h5>
-                <span class="badge badge-pill badge-info p-2">3:00pm</span>
-              </div>
-              <p class="mb-1">Json Babel</p>
-            </li>        
-          </ul>
-    
-    
-       /Schedule      --> 
+        
     
       <!-- callout button-->
-        <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Beautiful Animated Website</button>
+        <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#profile">Beautiful Animated Website</button>
       <!-- c/allout button-->
     
     
@@ -247,34 +193,7 @@
         <!-- /signup form -->
     
     <!-- footer   -->
-      <!-- 
-	  <div class="row py-3">
-        <div class="col-md-7"> 
-          <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tracks</a>
-              </li>
-              <li class="nav-item">
-             
-                  <div class="btn-group dropup">
-                    <button type="button" class="btn btn-outline-secondary">Other Confs</button>
-                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">CSS Conf</a>
-                      <a class="dropdown-item" href="#">Python Conf</a>
-                      <a class="dropdown-item" href="#">Java Conf</a>
-                      <a class="dropdown-item" href="#">Swift Conf</a>
-                    </div>
-                  </div>
-              </li>
-            </ul>
-        </div>
-		-->
+      
           <div class="col-md text-md-right">
             <small>&copy; 2017 Joseph Patrick &amp; Tech Blog</small>
           </div>
@@ -298,9 +217,42 @@
       </button>
 -->
 
+	<!-- Image Modal -->
+      <div class="modal fade" id="img-modal" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+		 			
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<img id="ibm-img" class = "mb-1 img-fluid rounded d-block" src = "img/ibm.jpg" alt="IBM Image"> 				
+			</div>
+			
+		  </div>
+        </div>
+      </div>
+	  
+	  <div class="modal fade" id="img-business" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+		 			
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<img id="ibm-img" class = "mb-1 img-fluid rounded d-block" src = "img/business.jpg" alt="IBM Image"> 				
+			</div>
+			
+		  </div>
+        </div>
+      </div>
+
+	<!-- /Image Modal -->
+
       
-      <!-- Modal -->
-      <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <!-- Profile Modal -->
+      <div class="modal fade" id="profile" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header bg-info text-white">
@@ -311,156 +263,31 @@
             </div>
             <div class="modal-body">
              
-              <!--Registration Form-->
+              <!--Profile-->
               
-              <form>
-                <!--
-				<div class="alert alert-warning alert-dismissible fade show" role="alert">
-					<strong>Hurry!</strong> Early Bird Registration Ends in 2 days!
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				-->
-                <h5 class"mb-4">Creating This Site</h5>
-                <div class="form-group">
+              
+                
+                <h5 class = "mb-4 text-center">Creating This Site</h5>
+                <div class="form-group text-center">
                   <label for="name">We are working hard to get this site running.</label>
                  <!-- <input type="text" class="form-control" id="name" placeholder="name"> -->
                 </div>
-                <div class="form-group">
+                <div class="form-group text-center">
                   <label for="email">Please Check Back Soon!</label>
                   <!--  <input type="text" class="form-control" id="email" placeholder="email"> -->
                 </div>
-                <!--
 				
-                <div class="form-group">
-                  
-                  <label for="role">Job Role: </label>
-                  <select class="custom-select form-control" id="role">
-                  <option value="full stack js developer">Full Stack JavaScript Developer</option>
-                  <option value="front end developer">Front End Developer</option>
-                  <option value="back end developer">Back End Developer</option>
-                  <option value="designer">Designer</option>
-                  <option value="student">Student</option> 
-                  </select>
-                
-                </div>
-                
-                <hr class="my-4">
-                
-                <h5 class="mb-4">Which Topics Interest You Most?</h5>
-                
-                <div class="form-check">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <span class="custom-control-indicator"></span>
-                    <label class="custom-control-label" for="customCheck1">JavaScript Frameworks</label>
-                  </div>
-                </div>
-                
-                  <div class="form-check">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <span class="custom-control-indicator"></span>
-                    <label class="custom-control-label" for="customCheck1">JavaScript Libraries</label>
-                  </div>
-                </div>
-                
-                
-                  <div class="form-check">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <span class="custom-control-indicator"></span>
-                    <label class="custom-control-label" for="customCheck1">Node. Js</label>
-                  </div>
-                </div>
-                
-                  <div class="form-check">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <span class="custom-control-indicator"></span>
-                    <label class="custom-control-label" for="customCheck1">JBuild Tools</label>
-                  </div>
-                </div>
-                
-                  <div class="form-check">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <span class="custom-control-indicator"></span>
-                    <label class="custom-control-label" for="customCheck1">ES2015</label>
-                  </div>
-                </div>
+			  <!-- /Profile-->
              
-                <hr class="mb-4">
-                <h5 class="mb-4">Payment Info</h5>
-                
-                <div class="form-row">
-                  <div class="col-lg-6 form-group">
-                    <label for="cc-num">Card Number:</label>
-                    <input class="form-control" id="cc-num" type="text">
-                  </div>
-                
-                  <div class="col-lg form-group">
-                    <label for="zip">Zip Code:</label>
-                    <input class="form-control" id="zip" type="text">
-                  </div>
-                
-                  <div class="col-lg form-group">
-                    <label for="cvv">CVV:</label>
-                    <input class="form-control" id="cvv" type="text">
-                  </div>
-                </div>
-                
-                
-                <div class="form-row">
-                  <label class="col-lg-12">Expiration Date:</label>
-                  
-                  <div class="form-group col-lg-8">
-                    <select class="custom-select form-control" id="exp-month">
-                        <option value="1">1 - January</option>
-                        <option value="2">2 - February</option>
-                        <option value="3">3 - March</option>
-                        <option value="4">4 - April</option>
-                        <option value="5">5 - May</option>
-                        <option value="6">6 - June</option>
-                        <option value="7">7 - July</option>
-                        <option value="8">8 - August</option>
-                        <option value="9">9 - September</option>
-                        <option value="10">10 - October</option>
-                        <option value="11">11 - November</option> 
-                        <option value="12">12 - December</option>
-                      </select> 
-                  </div>
-                  
-                  
-                  <div class="form-group col-lg">
-                  <select class="custom-select form-control" id="exp-year">
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                  </select> 
-                  </div>
-                
-                </div>
-                
-                <hr class="mb-4">
-                  <button type="submit" class="btn btn-primary btn-lg">Register</button>
-                
-              </form>
-              
-              <!--/Registration Form-->
-              
-              
-              
             </div>
           
+		  
           </div>
         </div>
       </div>
+    <!-- Profile Modal -->
     
-    <!-- Optional JavaScript -->
+	<!-- Optional JavaScript -->
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
             
